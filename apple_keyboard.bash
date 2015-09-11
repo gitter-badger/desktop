@@ -10,5 +10,8 @@ echo
 echo 0 | sudo tee /sys/module/hid_apple/parameters/iso_layout
 echo options hid_apple iso_layout=0 | sudo tee -a /etc/modprobe.d/hid_apple.conf
 
-echo "On elementaryOS you can go to Settings > Keyboard > Options > Alt/Win key behavior and select: Alt is swapped with Win"
+echo "Switching Alt and Win keys"
 echo
+echo 1 | sudo tee /sys/module/hid_apple/parameters/swap_out_cmd
+echo options hid_apple swap_out_cmd=1 | sudo tee -a /etc/modprobe.d/hid_apple.conf
+
