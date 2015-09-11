@@ -14,4 +14,6 @@ echo "Switching Alt and Win keys"
 echo
 echo 1 | sudo tee /sys/module/hid_apple/parameters/swap_out_cmd
 echo options hid_apple swap_out_cmd=1 | sudo tee -a /etc/modprobe.d/hid_apple.conf
-
+sed -i '/^exit 0/i \
+echo 1 > /sys/module/hid_apple/parameters/swap_opt_cmd\
+' /etc/rc.local
