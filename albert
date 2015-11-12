@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -e
+
+sudo apt-add-repository ppa:nilarimogard/webupd8 -y
+sudo apt-get update
+sudo apt-get -y install albert
+
+echo "Installation is done"
