@@ -8,8 +8,8 @@ This script setup the OS for my Apple slim aluminum keyboard according to [this 
 
 ## Royal GTK theme & Numix icons
 
-A nice theme with great icons pack
+A nice theme with great icons pack.
 
 ## Albert
 
-Install [Albert](https://github.com/ManuelSchneid3r/albert) commands/tasks/etc runner.
+Install [Albert](https://github.com/ManuelSchneid3r/albert) launcher.
