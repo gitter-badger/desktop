@@ -1,6 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-sudo apt-add-repository ppa:numix/ppa
+set -e
+
+sudo apt-add-repository ppa:numix/ppa -y
 sudo apt-get update
 sudo apt-get -y install numix-icon-theme-circle
 sudo dpkg -i Themes/royal-gtk-theme_1.0-1_all.deb
